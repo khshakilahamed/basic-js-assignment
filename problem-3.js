@@ -15,7 +15,7 @@ function deliveryCost(productNumber) {
     if (productNumber > 0 && typeof productNumber == "number") {
         // for first 100
         if (productNumber <= 100) {
-            totalCostFrist100 = first100Cost * 100;
+            totalCostFrist100 = first100Cost * productNumber;
             return totalCostFrist100;
         }
         // for second 100
@@ -52,5 +52,5 @@ function deliveryCost(productNumber) {
     }
 }
 // function call
-var totalDeliveryCost = deliveryCost(210);
+var totalDeliveryCost = deliveryCost(99);
 console.log(totalDeliveryCost);
